@@ -45,7 +45,7 @@ def insert_or_update_user(first_name, last_name, phone):
                     """, (first_name, last_name, phone))
                 conn.commit()
             else:
-                print(f"❌ Invalid phone number: {phone}")
+                print(f"Invalid phone: {phone}")
 
 
 def insert_many_users(data):
